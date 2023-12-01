@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Roblox Пицца</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/main_icon.svg" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/forms.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="header_left">
+                <a class="header_slogan" href="main_page.html">
+                    <img src="images/main_logo.svg" class="main_logo" />
+                </a>
+                <div class="header_about">
+                    <span class="header_about_firstline"
+                        >Доставка пиццы
+                        <span class="bolder_font">Белгород</span></span
+                    >
+                    <span class="header_about_secondline">30 мин</span>
+                </div>
+            </div>
+            <div class="header_right">
+                <a href="forms.html" class="join_button">Войти</a>
+                <nav class="mobile_nav">
+                    <label for="mobile_nav_checkbox" class="mobile_nav_toggle">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="white"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                            />
+                        </svg>
+                    </label>
+                    <div class="mobile_nav_header">
+                        <img
+                            src="images/main_logo_mobile_dark.svg"
+                            class="mobile_nav_logo"
+                        />
+                        <input
+                            type="checkbox"
+                            id="nav__checkbox"
+                            class="nav__checkbox"
+                        />
+                    </div>
+                    <ul class="mobile_nav_menu">
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">О нас</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile_nav_toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </div>
+        </header>
+        <!-- <hr class="head_hr"> -->
+        <nav class="nav">
+            <div class="navbar">
+                <ul class="nav_list">
+                    <!-- <li><img src="images/nav_logo.svg" class="nav_logo"></li> -->
+                    <li><a href="main_page.html#pizzas">Пиццы</a></li>
+                    <li><a href="main_page.html#combos">Комбо</a></li>
+                    <li><a href="main_page.html#snacks">Закуски</a></li>
+                    <li><a href="main_page.html#deserts">Десерты</a></li>
+                    <li><a href="main_page.html#drinks">Напитки</a></li>
+                    <li><a href="bonusactions.html">Акции</a></li>
+                </ul>
+                <a href="#" class="cart">Корзина</a>
+            </div>
+        </nav>
+        <!-- <section class="most_ordered">
+      <h2>Часто заказывают</h2>
+    </section> -->
+        <main class="main">
+            <h2 class="menu_heading">Регистрация на сайт</h2>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Имя</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Введите имя"
+                        required
+                        class="form-control"
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="paswword-label" for="password">Ваш пароль</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Введите пароль"
+                        required
+                        class="form-control"
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="paswword-label" for="password"
+                        >Подтвердите пароль</label
+                    >
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        id="confirm_password"
+                        placeholder="Подтвердите пароль"
+                        required
+                        class="form-control"
+                    />
+                    <div id="message"></div>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Введите email"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <p>Выберите город</p>
+                    <select
+                        id="city-dropdown"
+                        name="role"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>
+                            Выберите из списка
+                        </option>
+                        <option value="Belgorod">Белгород</option>
+                        <option value="Kursk">Курск</option>
+                        <option value="Voronezh">Воронеж</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Rostov-na-Dony">Ростов-на-Дону</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Хотите ли вы получать специальные предложения</p>
+                    <label class="label-radio">
+                        <input
+                            name="user-recommend"
+                            value="definitely"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                            required
+                        />
+                        Да
+                    </label>
+                    <label class="label-radio">
+                        <input
+                            name="user-recommend"
+                            value="maybe"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                            required
+                        />
+                        Нет
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Откуда вы узнали о нашем ресторане?</p>
+                    <label class="label-radio">
+                        <input
+                            name="prefer"
+                            value="front-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Реклама
+                    </label>
+                    <label class="label-radio">
+                        <input
+                            name="prefer"
+                            value="front-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Знакомые
+                    </label>
+                    <label class="label-radio">
+                        <input
+                            name="prefer"
+                            value="front-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Увидел на улице
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button
+                        type="submit"
+                        id="submit"
+                        class="submit-button"
+                        href=""
+                        disabled
+                    >
+                        Подтвердить
+                    </button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="main_page.html">ROBLOX Пицца</a>
+                    <p>Вкусная пицца для вас и вашей семьи.</p>
+                    <div class="logo-social-icons">
+                        <a target="_blank" href="https://vk.com/bogatstvodeda"
+                            ><img
+                                src="images/vk-1-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                        <a target="_blank" href="https://t.me/FOZERY"
+                            ><img
+                                src="images/telegram-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/instagram-2-1-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                    </div>
+                </div>
+                <div id="" class="footer-nav">
+                    <span class="footer-nav-heading">Roblox Пицца</span>
+                    <a href="about.html" class="footer-nav-link">О нас</a>
+                    <a href="" class="footer-nav-link">Калорийность блюд</a>
+                    <a href="" class="footer-nav-link">Состав блюд</a>
+                </div>
+                <div class="footer-nav">
+                    <span class="footer-nav-heading">Работа</span>
+                    <a href="" class="footer-nav-link">В пиццерии</a>
+                </div>
+                <div class="footer-nav">
+                    <span class="footer-nav-heading">Контакты</span>
+                    <a href="#" class="footer-nav-link">Почта</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Apple App Store/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Google Play/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Huawei AppGallery/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                </div>
+                <div class="footer-legal">
+                    <span class="legal-header">Roblox Пицца</span>
+                    <div>©&nbsp;2023</div>
+                    <div class="legal-information">
+                        © 2023 Сайт студента НИУ "БелГУ" группы 12002202 Тагиева
+                        Дмитрия
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/js/script.js"></script>
+        <script src="/js/formScript.js"></script>
+    </body>
+</html>

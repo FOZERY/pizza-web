@@ -1,0 +1,44 @@
+.profile_heading {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.profile_main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 1.5rem;
+}
+
+.profile_input {
+    width: 300px;
+}
+
+.profile_row .label {
+    color: rgb(92, 99, 112);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profile_input .input {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    color: gray;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 15px;
+    transition: border ease 0.1s;
+    width: 300px;
+    cursor: not-allowed;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(13, 21, 26, 0.1);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(13, 21, 26, 0.1);
+    box-shadow: 0px 3px 10px 0px rgba(13, 21, 26, 0.1);
+}
+
+.profile_input .input:not([disabled]):focus {
+    outline: none;
+    border: 1px solid black;
+}

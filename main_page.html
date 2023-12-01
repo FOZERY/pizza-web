@@ -1,940 +1,1000 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Roblox Пицца</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/main_icon.svg" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Roblox Пицца</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/main_icon.svg" />
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-  <body>
-    <header>
-      <div class="header_left">
-        <a class="header_slogan" href="main_page.html">
-          <img src="images/main_logo.svg" class="main_logo" />
-        </a>
-        <div class="header_about">
-          <span class="header_about_firstline"
-            >Доставка пиццы <span class="bolder_font">Белгород</span></span
-          >
-          <span class="header_about_secondline">30 мин</span>
-        </div>
-      </div>
-      <div class="header_right">
-        <a href="forms.html" class="join_button">Войти</a>
-        <nav class="mobile_nav">
-          <label for="mobile_nav_checkbox" class="mobile_nav_toggle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="white"
-              class="bi bi-x"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </label>
-          <div class="mobile_nav_header">
-            <img
-              src="images/main_logo_mobile_dark.svg"
-              class="mobile_nav_logo"
-            />
-            <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
-          </div>
-          <ul class="mobile_nav_menu">
-            <li><a href="#">Войти</a></li>
-            <li><a href="">Lorem</a></li>
-            <li><a href="">Lorem</a></li>
-            <li><a href="">Lorem</a></li>
-            <li><a href="">О нас</a></li>
-          </ul>
+    <body>
+        <header>
+            <div class="header_left">
+                <a class="header_slogan" href="main_page.html">
+                    <img src="images/main_logo.svg" class="main_logo" />
+                </a>
+                <div class="header_about">
+                    <span class="header_about_firstline"
+                        >Доставка пиццы
+                        <span class="bolder_font">Белгород</span></span
+                    >
+                    <span class="header_about_secondline">30 мин</span>
+                </div>
+            </div>
+            <div class="header_right">
+                <a href="forms.html" class="join_button">Войти</a>
+                <nav class="mobile_nav">
+                    <label for="mobile_nav_checkbox" class="mobile_nav_toggle">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="white"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                            />
+                        </svg>
+                    </label>
+                    <div class="mobile_nav_header">
+                        <img
+                            src="images/main_logo_mobile_dark.svg"
+                            class="mobile_nav_logo"
+                        />
+                        <input
+                            type="checkbox"
+                            id="nav__checkbox"
+                            class="nav__checkbox"
+                        />
+                    </div>
+                    <ul class="mobile_nav_menu">
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">О нас</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile_nav_toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </div>
+        </header>
+        <!-- <hr class="head_hr"> -->
+        <nav class="nav">
+            <div class="navbar">
+                <ul class="nav_list">
+                    <!-- <li><img src="images/nav_logo.svg" class="nav_logo"></li> -->
+                    <li><a href="#pizzas">Пиццы</a></li>
+                    <li><a href="#combos">Комбо</a></li>
+                    <li><a href="#snacks">Закуски</a></li>
+                    <li><a href="#deserts">Десерты</a></li>
+                    <li><a href="#drinks">Напитки</a></li>
+                    <li><a href="bonusactions.html">Акции</a></li>
+                </ul>
+                <a href="#" class="cart">Корзина</a>
+            </div>
         </nav>
-      </div>
-      <div class="mobile_nav_toggle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
-        </svg>
-      </div>
-    </header>
-    <!-- <hr class="head_hr"> -->
-    <nav>
-      <div class="navbar">
-        <ul class="nav_list">
-          <!-- <li><img src="images/nav_logo.svg" class="nav_logo"></li> -->
-          <li><a href="#pizzas">Пиццы</a></li>
-          <li><a href="#combos">Комбо</a></li>
-          <li><a href="#snacks">Закуски</a></li>
-          <li><a href="#deserts">Десерты</a></li>
-          <li><a href="#drinks">Напитки</a></li>
-          <li><a href="bonusactions.html">Акции</a></li>
-        </ul>
-        <a href="#" class="cart">Корзина</a>
-      </div>
-    </nav>
-    <!-- <section class="most_ordered">
-      <h2>Часто заказывают</h2>
-    </section> -->
-    <main class="main">
-      <section id="pizzas" class="menu">
-        <h2 class="menu_heading">Пиццы</h2>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Пепперони"
-                src="images/pepperoni.png"
-                class="product_img"
-              />
+        <main class="main">
+            <section id="pizzas" class="menu">
+                <h2 class="menu_heading">Пиццы</h2>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Пепперони"
+                                src="images/pepperoni.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Пепперони</h3>
+                        <div class="product_receipt">
+                            Пикантная пепперони, увеличенная порция моцареллы,
+                            томаты, фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Мясная"
+                                src="images/supermeat.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Мясная</h3>
+                        <div class="product_receipt">
+                            Цыпленок, ветчина, пикантная пепперони, острая
+                            чоризо, моцарелла, фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="4 сыра"
+                                src="images/4cheese.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">4 сыра</h3>
+                        <div class="product_receipt">
+                            Сыр блю чиз, смесь сыров чеддер и пармезан,
+                            моцарелла, фирменный соус альфредо
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Ветчина-грибы"
+                                src="images/hamandmushroms.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Ветчина-грибы</h3>
+                        <div class="product_receipt">
+                            Ветчина, шампиньоны, увеличенная порция моцареллы,
+                            фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Песто"
+                                src="images/pesto.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Песто</h3>
+                        <div class="product_receipt">
+                            Цыпленок, соус песто, кубики брынзы, томаты,
+                            моцарелла, фирменный соус альфредо
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Маргарита"
+                                src="images/margarita.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Маргарита</h3>
+                        <div class="product_receipt">
+                            Увеличенная порция моцареллы, томаты, итальянские
+                            травы, фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Гавайская"
+                                src="images/hawanian.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Гавайская</h3>
+                        <div class="product_receipt">
+                            Фирменный соус альфредо, цыпленок, моцарелла,
+                            ананасы
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Диабло"
+                                src="images/diablo.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Диабло</h3>
+                        <div class="product_receipt">
+                            Острая чоризо, острый перец халапеньо, соус барбекю,
+                            митболы, томаты, сладкий перец, красный лук,
+                            моцарелла, фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Охотничья"
+                                src="images/ohotnichya.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Охотничья</h3>
+                        <div class="product_receipt">
+                            Пицца - соус, сыр моцарелла, сыр гауда, колбаски,
+                            бекон, парная говядина, огурцы маринованные
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Вегетарианская"
+                                src="images/vegan.jpeg"
+                                id="vegan_pizza"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Вегетарианская</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Сырная"
+                                src="images/cheese.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Сырная</h3>
+                        <div class="product_receipt">
+                            Моцарелла, сыры чеддер и пармезан, фирменный соус
+                            альфредо
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Барбекю"
+                                src="images/bbq.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Барбекю</h3>
+                        <div class="product_receipt">
+                            Острая чоризо, соус барбекю, томаты, красный лук,
+                            моцарелла, фирменный томатный соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="С морепродуктами"
+                                src="images/fishpizza.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">С морепродуктами</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 539 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+            </section>
+            <section id="combos" class="menu">
+                <h2 class="menu_heading">Комбо</h2>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Комбо от 599 ₽"
+                                src="images/combo599.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Комбо от 599 ₽</h3>
+                        <div class="product_receipt">
+                            Маленькая пицца, закуска, напиток и соус
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 599 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="3 пиццы от 799 ₽"
+                                src="images/3pizzas.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">3 пиццы от 799 ₽</h3>
+                        <div class="product_receipt">
+                            Три маленькие пиццы по суперцене
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="2 пиццы"
+                                src="images/2pizzas.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">2 пиццы</h3>
+                        <div class="product_receipt">
+                            Две средние пиццы по суперцене
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">949 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="2 пиццы и напиток"
+                                src="images/2pizzasdrink.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">2 пиццы и напиток</h3>
+                        <div class="product_receipt">
+                            Две маленькие пиццы и один холодный напиток по
+                            суперцене
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="5 пицц"
+                                src="images/5pizzes.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">5 пицц</h3>
+                        <div class="product_receipt">
+                            Пять маленьких пицц по суперцене
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="10 пицц"
+                                src="images/10pizzas.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">10 пицц</h3>
+                        <div class="product_receipt">
+                            Десять маленьких пицц по суперцене
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+            </section>
+            <section id="snacks" class="menu">
+                <h2 class="menu_heading">Закуски</h2>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Картофель-фри"
+                                src="images/frenchfries.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Картофель фри</h3>
+                        <div class="product_receipt">
+                            Запеченная в печи картошечка
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Сырные палочки"
+                                src="images/cheesesticks.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Сырные палочки</h3>
+                        <div class="product_receipt">
+                            На пышном тесте только моцарелла и соус песто
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Сырные палочки"
+                                src="images/caesar.png"
+                                id="caesar_product"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Салат Цезарь</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/pastapesto.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Паста Песто</h3>
+                        <div class="product_receipt">
+                            Паста с соусом песто, цыпленком, томатами,
+                            моцареллой и фирменным томатным соусом
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+            </section>
+            <section id="deserts" class="menu">
+                <h2 сlass="menu_heading">Десерты</h2>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/cheesecake_newyork.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Чизкейк Нью-Йорк</h3>
+                        <div class="product_receipt">
+                            Нежнейший творожный чизкейк
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/cheesecake_banana.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Чизкейк Банановый</h3>
+                        <div class="product_receipt">
+                            Нежный чизкейк с бананом
+                        </div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Айс-делюкс"
+                                src="images/icedeluxestrawberry.png"
+                                class="product_img McIcecreams_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Мороженое Айс-делюкс клубничное
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Айс-делюкс"
+                                src="images/icedeluxchocolate.png"
+                                class="product_img McIcecreams_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Мороженое Айс-делюкс шоколадное
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/icedeluxechocolatecaramel.png"
+                                class="product_img McIcecreams_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Мороженое Айс-делюкс карамельно-шоколадное
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/milkshakestrawberry.png"
+                                class="product_img milkshake_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Клубничный молочный коктейль
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/milkshakechocolate.png"
+                                class="product_img milkshake_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Шоколадный молочный коктейль
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/milkshakevanilla.png"
+                                class="product_img milkshake_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Ванильный молочный коктейль
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+            </section>
+            <section id="drinks" class="menu">
+                <h2 class="menu_heading">Напитки</h2>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/cocacola.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Добрый Кола</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/dietcocacola.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Добрый Кола без сахара</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/sprite.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Добрый Лайм-Лимон</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/fanta.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Добрый Апельсин</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/iceteablack.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">
+                            Холодный чай Rich черный с лимоном
+                        </h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/iceteagreen.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Холодный чай Rich зелёный</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/applejuice.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Яблочный сок Rich</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/orangejuice.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Апельсиновый сок Rich</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/cherryjuice.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Вишневый нектар Rich</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/bonaaqua.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Вода BonAqua газированная</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/capuchino.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Кофе капучино</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/latte.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Кофе Латте</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+                <a href="#" class="menu_product">
+                    <div class="product_main">
+                        <div class="img_container">
+                            <img
+                                alt="Паста Песто"
+                                src="images/americano.png"
+                                class="product_img"
+                            />
+                        </div>
+                        <h3 class="product_name">Кофе Американо</h3>
+                        <div class="product_receipt"></div>
+                    </div>
+                    <div class="product_footer">
+                        <div class="product_price">от 799 ₽</div>
+                        <div class="product_choose_button">Выбрать</div>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="main_page.html">ROBLOX Пицца</a>
+                    <p>Вкусная пицца для вас и вашей семьи.</p>
+                    <div class="logo-social-icons">
+                        <a target="_blank" href="https://vk.com/bogatstvodeda"
+                            ><img
+                                src="images/vk-1-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                        <a target="_blank" href="https://t.me/FOZERY"
+                            ><img
+                                src="images/telegram-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="images/instagram-2-1-logo-svgrepo-com.svg"
+                                class="social-logo"
+                        /></a>
+                    </div>
+                </div>
+                <div id="" class="footer-nav">
+                    <span class="footer-nav-heading">Roblox Пицца</span>
+                    <a href="about.html" class="footer-nav-link">О нас</a>
+                    <a href="" class="footer-nav-link">Калорийность блюд</a>
+                    <a href="" class="footer-nav-link">Состав блюд</a>
+                </div>
+                <div class="footer-nav">
+                    <span class="footer-nav-heading">Работа</span>
+                    <a href="" class="footer-nav-link">В пиццерии</a>
+                </div>
+                <div class="footer-nav">
+                    <span class="footer-nav-heading">Контакты</span>
+                    <a href="#" class="footer-nav-link">Почта</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Apple App Store/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Google Play/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="images/Badges/Huawei AppGallery/Black/EN.svg"
+                            class="app-icons"
+                    /></a>
+                </div>
+                <div class="footer-legal">
+                    <span class="legal-header">Roblox Пицца</span>
+                    <div>©&nbsp;2023</div>
+                    <div class="legal-information">
+                        © 2023 Сайт студента НИУ "БелГУ" группы 12002202 Тагиева
+                        Дмитрия
+                    </div>
+                </div>
             </div>
-            <h3 class="product_name">Пепперони</h3>
-            <div class="product_receipt">
-              Пикантная пепперони, увеличенная порция моцареллы, томаты,
-              фирменный томатный соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Мясная"
-                src="images/supermeat.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Мясная</h3>
-            <div class="product_receipt">
-              Цыпленок, ветчина, пикантная пепперони, острая чоризо, моцарелла,
-              фирменный томатный соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="4 сыра" src="images/4cheese.png" class="product_img" />
-            </div>
-            <h3 class="product_name">4 сыра</h3>
-            <div class="product_receipt">
-              Сыр блю чиз, смесь сыров чеддер и пармезан, моцарелла, фирменный
-              соус альфредо
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Ветчина-грибы"
-                src="images/hamandmushroms.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Ветчина-грибы</h3>
-            <div class="product_receipt">
-              Ветчина, шампиньоны, увеличенная порция моцареллы, фирменный
-              томатный соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="Песто" src="images/pesto.png" class="product_img" />
-            </div>
-            <h3 class="product_name">Песто</h3>
-            <div class="product_receipt">
-              Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, фирменный
-              соус альфредо
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Маргарита"
-                src="images/margarita.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Маргарита</h3>
-            <div class="product_receipt">
-              Увеличенная порция моцареллы, томаты, итальянские травы, фирменный
-              томатный соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Гавайская"
-                src="images/hawanian.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Гавайская</h3>
-            <div class="product_receipt">
-              Фирменный соус альфредо, цыпленок, моцарелла, ананасы
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="Диабло" src="images/diablo.png" class="product_img" />
-            </div>
-            <h3 class="product_name">Диабло</h3>
-            <div class="product_receipt">
-              Острая чоризо, острый перец халапеньо, соус барбекю, митболы,
-              томаты, сладкий перец, красный лук, моцарелла, фирменный томатный
-              соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Охотничья"
-                src="images/ohotnichya.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Охотничья</h3>
-            <div class="product_receipt">
-              Пицца - соус, сыр моцарелла, сыр гауда, колбаски, бекон, парная
-              говядина, огурцы маринованные
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Вегетарианская"
-                src="images/vegan.jpeg"
-                id="vegan_pizza"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Вегетарианская</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="Сырная" src="images/cheese.png" class="product_img" />
-            </div>
-            <h3 class="product_name">Сырная</h3>
-            <div class="product_receipt">
-              Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="Барбекю" src="images/bbq.png" class="product_img" />
-            </div>
-            <h3 class="product_name">Барбекю</h3>
-            <div class="product_receipt">
-              Острая чоризо, соус барбекю, томаты, красный лук, моцарелла,
-              фирменный томатный соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="С морепродуктами"
-                src="images/fishpizza.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">С морепродуктами</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 539 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-      </section>
-      <section id="combos" class="menu">
-        <h2 class="menu_heading">Комбо</h2>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Комбо от 599 ₽"
-                src="images/combo599.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Комбо от 599 ₽</h3>
-            <div class="product_receipt">
-              Маленькая пицца, закуска, напиток и соус
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 599 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="3 пиццы от 799 ₽"
-                src="images/3pizzas.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">3 пиццы от 799 ₽</h3>
-            <div class="product_receipt">Три маленькие пиццы по суперцене</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="2 пиццы" src="images/2pizzas.png" class="product_img" />
-            </div>
-            <h3 class="product_name">2 пиццы</h3>
-            <div class="product_receipt">Две средние пиццы по суперцене</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">949 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="2 пиццы и напиток"
-                src="images/2pizzasdrink.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">2 пиццы и напиток</h3>
-            <div class="product_receipt">
-              Две маленькие пиццы и один холодный напиток по суперцене
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img alt="5 пицц" src="images/5pizzes.png" class="product_img" />
-            </div>
-            <h3 class="product_name">5 пицц</h3>
-            <div class="product_receipt">Пять маленьких пицц по суперцене</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="10 пицц"
-                src="images/10pizzas.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">10 пицц</h3>
-            <div class="product_receipt">
-              Десять маленьких пицц по суперцене
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-      </section>
-      <section id="snacks" class="menu">
-        <h2 class="menu_heading">Закуски</h2>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Картофель-фри"
-                src="images/frenchfries.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Картофель фри</h3>
-            <div class="product_receipt">Запеченная в печи картошечка</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Сырные палочки"
-                src="images/cheesesticks.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Сырные палочки</h3>
-            <div class="product_receipt">
-              На пышном тесте только моцарелла и соус песто
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Сырные палочки"
-                src="images/caesar.png"
-                id="caesar_product"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Салат Цезарь</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/pastapesto.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Паста Песто</h3>
-            <div class="product_receipt">
-              Паста с соусом песто, цыпленком, томатами, моцареллой и фирменным
-              томатным соусом
-            </div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-      </section>
-      <section id="deserts" class="menu">
-        <h2 сlass="menu_heading">Десерты</h2>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/cheesecake_newyork.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Чизкейк Нью-Йорк</h3>
-            <div class="product_receipt">Нежнейший творожный чизкейк</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/cheesecake_banana.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Чизкейк Банановый</h3>
-            <div class="product_receipt">Нежный чизкейк с бананом</div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Айс-делюкс"
-                src="images/icedeluxestrawberry.png"
-                class="product_img McIcecreams_img"
-              />
-            </div>
-            <h3 class="product_name">Мороженое Айс-делюкс клубничное</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Айс-делюкс"
-                src="images/icedeluxchocolate.png"
-                class="product_img McIcecreams_img"
-              />
-            </div>
-            <h3 class="product_name">Мороженое Айс-делюкс шоколадное</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/icedeluxechocolatecaramel.png"
-                class="product_img McIcecreams_img"
-              />
-            </div>
-            <h3 class="product_name">
-              Мороженое Айс-делюкс карамельно-шоколадное
-            </h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/milkshakestrawberry.png"
-                class="product_img milkshake_img"
-              />
-            </div>
-            <h3 class="product_name">Клубничный молочный коктейль</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/milkshakechocolate.png"
-                class="product_img milkshake_img"
-              />
-            </div>
-            <h3 class="product_name">Шоколадный молочный коктейль</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/milkshakevanilla.png"
-                class="product_img milkshake_img"
-              />
-            </div>
-            <h3 class="product_name">Ванильный молочный коктейль</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-      </section>
-      <section id="drinks" class="menu">
-        <h2 class="menu_heading">Напитки</h2>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/cocacola.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Добрый Кола</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/dietcocacola.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Добрый Кола без сахара</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/sprite.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Добрый Лайм-Лимон</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/fanta.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Добрый Апельсин</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/iceteablack.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Холодный чай Rich черный с лимоном</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/iceteagreen.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Холодный чай Rich зелёный</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/applejuice.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Яблочный сок Rich</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/orangejuice.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Апельсиновый сок Rich</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/cherryjuice.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Вишневый нектар Rich</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/bonaaqua.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Вода BonAqua газированная</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/capuchino.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Кофе капучино</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/latte.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Кофе Латте</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-        <a href="#" class="menu_product">
-          <div class="product_main">
-            <div class="img_container">
-              <img
-                alt="Паста Песто"
-                src="images/americano.png"
-                class="product_img"
-              />
-            </div>
-            <h3 class="product_name">Кофе Американо</h3>
-            <div class="product_receipt"></div>
-          </div>
-          <div class="product_footer">
-            <div class="product_price">от 799 ₽</div>
-            <div class="product_choose_button">Выбрать</div>
-          </div>
-        </a>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-grid">
-        <div class="footer-logo">
-          <a href="main_page.html">ROBLOX Пицца</a>
-          <p>Вкусная пицца для вас и вашей семьи.</p>
-          <div class="logo-social-icons">
-            <a target="_blank" href="https://vk.com/bogatstvodeda"
-              ><img src="images/vk-1-logo-svgrepo-com.svg" class="social-logo"
-            /></a>
-            <a target="_blank" href="https://t.me/FOZERY"
-              ><img
-                src="images/telegram-logo-svgrepo-com.svg"
-                class="social-logo"
-            /></a>
-            <a href="#"
-              ><img
-                src="images/instagram-2-1-logo-svgrepo-com.svg"
-                class="social-logo"
-            /></a>
-          </div>
-        </div>
-        <div id="" class="footer-nav">
-          <span class="footer-nav-heading">Roblox Пицца</span>
-          <a href="about.html" class="footer-nav-link">О нас</a>
-          <a href="" class="footer-nav-link">Калорийность блюд</a>
-          <a href="" class="footer-nav-link">Состав блюд</a>
-        </div>
-        <div class="footer-nav">
-          <span class="footer-nav-heading">Работа</span>
-          <a href="" class="footer-nav-link">В пиццерии</a>
-        </div>
-        <div class="footer-nav">
-          <span class="footer-nav-heading">Контакты</span>
-          <a href="#" class="footer-nav-link">Почта</a>
-        </div>
-        <div class="footer-links">
-          <a href="#"
-            ><img
-              src="images/Badges/Apple App Store/Black/EN.svg"
-              class="app-icons"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/Badges/Google Play/Black/EN.svg"
-              class="app-icons"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/Badges/Huawei AppGallery/Black/EN.svg"
-              class="app-icons"
-          /></a>
-        </div>
-        <div class="footer-legal">
-          <span class="legal-header">Roblox Пицца</span>
-          <div>©&nbsp;2023</div>
-          <div class="legal-information">
-            © 2023 Сайт студента НИУ "БелГУ" группы 12002202 Тагиева Дмитрия
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- <div class="modal">
+        </footer>
+        <!-- <div class="modal">
     <div class="modal__container">
        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-x"
       viewBox="0 0 16 16">
@@ -961,5 +1021,7 @@
       
     </div>
   </div> -->
-  </body>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>

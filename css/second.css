@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.join_button {
+  color: rgb(104, 104, 104);
+  background-color: rgb(241, 241, 241);
+  padding: 8px 20px;
+}
+
+.join_button:hover {
+  color: black;
+  background-color: rgb(241, 241, 241);
+}
+
+.join_button:active {
+  border-color:rgb(104, 104, 104) !important;
+  background-color: rgb(241, 241, 241) !important;
+}
+
+.main_nav .nav-item {
+  color: rgb(104, 104, 104);
+  background-color: rgb(231, 231, 231);
+  height: 30px;
+}
+
+.main_nav .nav-link,
+.main_nav .nav-link:focus {
+  color: black;
+
+}
+
+.main_nav .nav-link:hover {
+  color: #cf5c36;
+}
+
+#cart {
+  background-color: #cf5c36;
+  color: white;
+}
+
+#cart:hover {
+  background-color: rgb(233, 152, 1);
+}
+
+#main_logo {
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main_nav .nav-item {
+    color: black;
+    background-color: white;
+}
+
+  #main_logo {
+    height: auto;
+  }
+
+  .main_nav .nav-link,
+.main_nav .nav-link:focus {
+  font-weight: bold;
+}
+}

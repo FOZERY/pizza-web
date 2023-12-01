@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+#survey-form {
+    border-radius: 10px;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    max-width: 310px;
+}
+
+.form-group label {
+    display: block;
+    color: rgb(92, 99, 112);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form-group p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.form-control {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 15px;
+    transition: border ease 0.1s;
+    width: 300px;
+    box-shadow: 0px 2px 4px 0px rgba(13, 21, 26, 0.1);
+}
+
+.form-control:focus {
+    /* border-color: #80bdff; */
+    outline: none;
+    border: 1px solid black;
+}
+
+.form-control input:focus-visible {
+    outline: none;
+}
+
+#message {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.form-group .label-radio {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.input-radio {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.input-checkbox {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.input-textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 1rem;
+    min-height: 210px;
+}
+
+.submit-button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    background-color: #37af65;
+    color: white;
+    font-weight: 500;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: transform 0.5s;
+}
+
+.submit-button:hover {
+    outline: 1px solid black;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 156, 34, 0.555);
+    transform: scale(0.98);
+}
+
+.submit-button:disabled {
+    transition: none;
+    background-color: gray;
+}
+
+.submit-button:disabled:hover {
+    outline: none;
+    box-shadow: none;
+    transform: none;
+}
