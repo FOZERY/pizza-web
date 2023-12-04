@@ -84,18 +84,20 @@
     font-weight: 500;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .submit-button:hover {
     outline: 1px solid black;
     outline: 0;
     box-shadow: 0 0 0 2px rgba(0, 156, 34, 0.555);
-    transform: scale(0.98);
+    transform: scale(0.99);
 }
 
 .submit-button:disabled {
     transition: none;
     background-color: gray;
+    cursor: default;
 }
 
 .submit-button:disabled:hover {
