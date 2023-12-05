@@ -780,6 +780,7 @@ nav {
     .menu_product {
         padding: 10px 10px 20px 10px;
         min-width: 215px;
+        max-width: 280px;
         border: 1px solid rgb(227, 227, 227);
         border-radius: 20px;
         gap: 1rem;
