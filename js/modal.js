@@ -15,8 +15,8 @@ form.addEventListener('input', validateForm);
 form.addEventListener('change', validateForm);
 
 const modal = document.querySelector('.modal');
-const openModalBtn = document.querySelector('.join_button');
-const closeModalBtn = document.querySelector('.btn-close');
+const openModalBtn = document.querySelector('.modal-btn-open');
+const closeModalBtn = document.querySelector('.modal-btn-close');
 
 const openModal = function () {
     modal.classList.remove('hidden');
