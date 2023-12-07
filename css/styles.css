@@ -796,6 +796,10 @@ nav {
         transform: translateY(4px);
     }
 
+    .menu_product:hover .img_container {
+        transform: none;
+    }
+
     .img_container {
         margin: auto;
     }
